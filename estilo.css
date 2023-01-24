@@ -135,6 +135,79 @@ html {
   display: none;
 }
 
+/* ------------------------------------------------------------------- 
+ * ## inicio scrolldown
+ * ------------------------------------------------------------------- */
+.s-hero__scroll {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: var(--vspace-1_25);
+}
+
+.s-hero__scroll-link {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row wrap;
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: calc(var(--text-size) * 0.6111);
+  line-height: var(--vspace-1);
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: white;
+}
+
+.s-hero__scroll-link:hover .scroll-text::after,
+.s-hero__scroll-link:focus .scroll-text::after {
+  width: 100%;
+}
+
+.s-hero__scroll-link .scroll-arrow {
+  display: block;
+  width: var(--vspace-1);
+  height: var(--vspace-1);
+  margin-right: 1.6rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: relative;
+}
+
+.s-hero__scroll-link .scroll-arrow svg {
+  height: 2rem;
+  width: 2rem;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.s-hero__scroll-link .scroll-arrow svg path {
+  fill: white;
+}
+
+.s-hero__scroll-link .scroll-text {
+  position: relative;
+}
+
+.s-hero__scroll-link .scroll-text::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 /* *********************/
 /* seccion S O B R E  M I */
 /* *********************/
@@ -321,6 +394,7 @@ html {
 }
 
 .contenedor-skills .skill .barra {
+  position: relative;
   background-color: #919191;
   width: 100%;
   height: 6px;
@@ -328,31 +402,99 @@ html {
 }
 
 .contenedor-skills .skill .barra .barra-progreso1 {
+  position: absolute;
   background-color: #fff;
-  width: 95%;
-  height: 6px;
+  width: 70%;
+  height: 100%;
   animation: progreso1 2s forwards;
 }
 
 .contenedor-skills .skill .barra .barra-progreso2 {
+  position: absolute;
   background-color: #fff;
-  width: 90%;
-  height: 6px;
+  width: 55%;
+  height: 100%;
   animation: progreso2 2s forwards;
 }
 
 .contenedor-skills .skill .barra .barra-progreso3 {
+  position: absolute;
   background-color: #fff;
-  width: 90%;
-  height: 6px;
+  width: 60%;
+  height: 100%;
   animation: progreso3 2s forwards;
 }
 
 .contenedor-skills .skill .barra .barra-progreso4 {
+  position: absolute;
+  background-color: #fff;
+  width: 50%;
+  height: 100%;
+  animation: progreso4 2s forwards;
+}
+
+.contenedor-skills .skill .barra .barra-progreso5 {
+  position: absolute;
+  background-color: #fff;
+  width: 35%;
+  height: 100%;
+  animation: progreso5 2s forwards;
+}
+
+.contenedor-skills .skill .barra .barra-progreso6 {
+  position: absolute;
+  background-color: #fff;
+  width: 35%;
+  height: 100%;
+  animation: progreso6 2s forwards;
+}
+
+.contenedor-skills .skill .barra .barra-progreso7 {
+  position: absolute;
+  background-color: #fff;
+  width: 70%;
+  height: 100%;
+  animation: progreso7 2s forwards;
+}
+
+.contenedor-skills .skill .barra .barra-progreso8 {
+  position: absolute;
+  background-color: #fff;
+  width: 40%;
+  height: 100%;
+  animation: progreso8 2s forwards;
+}
+
+.contenedor-skills .skill .barra .barra-progreso9 {
+  position: absolute;
+  background-color: #fff;
+  width: 95%;
+  height: 100%;
+  animation: progreso9 2s forwards;
+}
+
+.contenedor-skills .skill .barra .barra-progreso10 {
+  position: absolute;
   background-color: #fff;
   width: 85%;
-  height: 6px;
-  animation: progreso4 2s forwards;
+  height: 100%;
+  animation: progreso10 2s forwards;
+}
+
+.contenedor-skills .skill .barra .barra-progreso11 {
+  position: absolute;
+  background-color: #fff;
+  width: 90%;
+  height: 100%;
+  animation: progreso11 2s forwards;
+}
+
+.contenedor-skills .skill .barra .barra-progreso12 {
+  position: absolute;
+  background-color: #fff;
+  width: 90%;
+  height: 100%;
+  animation: progreso12 2s forwards;
 }
 
 @keyframes progreso1 {
@@ -360,7 +502,7 @@ html {
     width: 0;
   }
   100% {
-    width: 95%;
+    width: 70%;
   }
 }
 
@@ -369,7 +511,7 @@ html {
     width: 0;
   }
   100% {
-    width: 90%;
+    width: 55%;
   }
 }
 
@@ -378,7 +520,7 @@ html {
     width: 0;
   }
   100% {
-    width: 90%;
+    width: 60%;
   }
 }
 
@@ -387,7 +529,79 @@ html {
     width: 0;
   }
   100% {
+    width: 50%;
+  }
+}
+
+@keyframes progreso5 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 35%;
+  }
+}
+
+@keyframes progreso6 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 35%;
+  }
+}
+
+@keyframes progreso7 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes progreso8 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@keyframes progreso9 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+@keyframes progreso10 {
+  0% {
+    width: 0;
+  }
+  100% {
     width: 85%;
+  }
+}
+
+@keyframes progreso11 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes progreso12 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
   }
 }
 /* *********************/
