@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Ana Web Developer</title>
+  </head>
+
+  <body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+      <div class="contenido">
+        <header>
+          <div class="contenido-header">
+            <h1>/Ana/</h1>
+            <nav id="nav" class="">
+              <ul id="links">
+                <li>
+                  <a
+                    href="#inicio"
+                    class="seleccionado"
+                    onclick="seleccionar(this)"
+                    >HOME</a
+                  >
+                </li>
+                <li>
+                  <a href="#sobremi" onclick="seleccionar(this)">ABOUT ME</a>
+                </li>
+                <li>
+                  <a href="#servicios" onclick="seleccionar(this)">RESUME</a>
+                </li>
+                <li>
+                  <a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a>
+                </li>
+                <li>
+                  <a href="#contacto" onclick="seleccionar(this)">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Icono del menu responsive -->
+            <div id="icono-nav" onclick="responsiveMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="redes">
+              <a href="#"> <i class="fab fa-github" aria-hidden="true"></i></a>
+              <a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+            </div>
+          </div>
+        </header>
+        <div class="presentacion">
+          <p class="bienvenida">Welcome</p>
+          <h2>Hi I'm <span>Ana</span>, Web Developer</h2>
+          <p class="descripcion">
+            Dublin based Student, who has just completed a Higher Diploma in
+            Science in Computing (Web development) at the National College of
+            Ireland.
+          </p>
+          <a href="#portfolio">Go to Portafolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+      <div class="contenedor-foto">
+        <img src="img/user.jpg" alt="" />
+      </div>
+      <div class="sobremi">
+        <p class="titulo-seccion">About Me</p>
+        <h2>Hi, I am <span>Ana</span></h2>
+        <h3>Web Developer</h3>
+        <p>
+          My name is Ana, currently in a career transition to tech, having just
+          completed a Higher Diploma in Computing Science (Web development) at
+          NCI. I started programming initially as a hobby, where I learned for
+          few months the basics of HTML, CSS, and JavaScript before branching
+          out into other technologies such as Java, React, MySQL, PHP and many
+          more, thanks to my NCI studies. I'm an avid learner and hard worker,
+          aspiring toward a career that will allow me to channel my knowledge
+          and appetite for learning through web development.
+        </p>
+        <p>Personal interests: cycling, reading, and being outdoors.</p>
+        <a href="#">Download CV</a>
+      </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+      <h3 class="titulo-seccion">WHAT I DO</h3>
+      <div class="fila">
+        <div class="servicio">
+          <span class="icono"> <i class="fa-solid fa-code"></i></span>
+          <h4>Web Development</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Development</li>
+            <li></li>
+            <li>Coding</li>
+          </ul>
+          <p>
+            I'm passionate about web development, interested in both web and
+            mobile app development. Eager to grow as a developer, and being able
+            to write clean, readable code that can be used by others and
+            leveraged to create beautiful software.
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+          <h4>Design</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Graphics</li>
+            <li></li>
+            <li>UX/UI Design</li>
+          </ul>
+          <p>
+            Design isn't just what a product looks like and feels like on the
+            outside. I reackon design encompasses the internal functionality of
+            a product as well as the overall user experience. I strive to design
+            interfaces and experiences that people can enjoy on all digital
+            mediums.
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-lightbulb"></i></span>
+          <h4>Involvement</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Commitment</li>
+            <li></li>
+            <li>Trust</li>
+          </ul>
+          <p>
+            At Technological University Dublin, on a voluntary basis, I'm
+            currently developing a website for a project called CLiC News,
+            originally set up in conjunction with the TU Dublin School of Media
+            and Students Learning with Comunities (SLWC). Besides I work as a
+            Teaching Assistant for its STEM Try Five Project, which aims to
+            bring technology and science closer to pupils.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION  T E C N O L O G I E S  -->
+    <div class="contenedor-skills" id="skills">
+      <h3>TECHNOLOGIES</h3>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Html & Css</p>
+          <span class="porcentaje">80%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="html"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Javascript</p>
+          <span class="porcentaje">70%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="js"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>React</p>
+          <span class="porcentaje">70%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="re"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>MySQL</p>
+          <span class="porcentaje">90%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="sql"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>PHP</p>
+          <span class="porcentaje">90%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="php"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Git</p>
+          <span class="porcentaje">60%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="sql"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Photoscape</p>
+          <span class="porcentaje">85%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="ps"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECCION  H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+      <h3>SKILLS</h3>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Web design & Development</p>
+          <span class="porcentaje">80%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="wb"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Database Design</p>
+          <span class="porcentaje">70%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="db"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Team Work</p>
+          <span class="porcentaje">70%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="tw"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Problem Solving</p>
+          <span class="porcentaje">90%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="ps"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Self-learning</p>
+          <span class="porcentaje">90%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="sl"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Communication skills</p>
+          <span class="porcentaje">60%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="cs"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Photoscape</p>
+          <span class="porcentaje">85%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="ps"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+      <h3 class="titulo-seccion">My Projects</h3>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto1.jpg" alt="" />
+          <div class="info">
+            <h4>Project Description</h4>
+            <p>Web</p>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto2.jpg" alt="" />
+          <div class="info">
+            <h4>Project Description</h4>
+            <p>Web</p>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto3.jpg" alt="" />
+          <div class="info">
+            <h4>Project Description</h4>
+            <p>Web</p>
+          </div>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto4.jpg" alt="" />
+          <div class="info">
+            <h4>Project Description</h4>
+            <p>Web</p>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto5.jpg" alt="" />
+          <div class="info">
+            <h4>Project Description</h4>
+            <p>Web</p>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto6.jpg" alt="" />
+          <div class="info">
+            <h4>Project Description</h4>
+            <p>Web</p>
+          </div>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto7.jpg" alt="" />
+          <div class="info">
+            <h4>Project Description</h4>
+            <p>Web</p>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto8.jpg" alt="" />
+          <div class="info">
+            <h4>Project Description</h4>
+            <p>Web</p>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto9.jpg" alt="" />
+          <div class="info">
+            <h4>Project Description</h4>
+            <p>Web</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+      <h3 class="titulo-seccion">Contact me</h3>
+      <div class="contenedor-form">
+        <form action="">
+          <div class="fila mitad">
+            <input type="text" placeholder="Name *" class="input-mitad" />
+            <input
+              type="email"
+              placeholder="Email address"
+              class="input-mitad"
+            />
+          </div>
+          <div class="fila">
+            <input type="text" placeholder="Subject..." class="input-full" />
+          </div>
+          <div class="fila">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Your Message..."
+              class="input-full"
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Send message" class="btn-enviar" />
+        </form>
+      </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+      <p>All rights reserved - 2022</p>
+      <div class="redes">
+        <a href="#"><i class="fab fa-github" aria-hidden="true"></i></a>
+        <a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
