@@ -359,6 +359,7 @@ html {
   font-size: 14px;
   line-height: 22px;
 }
+
 /* *********************/
 /* seccion S K I L L S */
 /* *********************/
@@ -679,36 +680,6 @@ html {
   margin-bottom: 20px;
 }
 
-#contacto .contenedor-form {
-  max-width: 1100px;
-  margin: auto;
-}
-
-#contacto .contenedor-form .fila {
-  margin-bottom: 15px;
-}
-
-#contacto .contenedor-form .mitad {
-  display: flex;
-  justify-content: space-between;
-}
-
-#contacto .contenedor-form input,
-#contacto .contenedor-form textarea {
-  padding: 20px;
-  border-radius: 20px;
-  border: none;
-  border: 1px solid #919191;
-}
-
-#contacto .contenedor-form .mitad input {
-  width: 48%;
-}
-
-#contacto .contenedor-form .input-full {
-  width: 100%;
-}
-
 #contacto .titulo-seccion {
   text-align: center;
   font-size: 22px;
@@ -719,15 +690,69 @@ html {
   text-decoration-thickness: 5px;
 }
 
-#contacto .btn-enviar {
-  display: block;
+#contacto .contenedor-form {
+  max-width: 1100px;
   margin: auto;
-  cursor: pointer;
-  transition: 0.5s;
-  padding: 10px 15px !important;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
 }
 
-#contacto .btn-enviar:hover {
+#contacto .contacto-texto {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px;
+  padding: 10px 15px;
+  transition: 0.5s;
+  letter-spacing: 0.4px;
+}
+
+#contacto .contacto-email {
+  font-size: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#contacto .contacto-email-header {
+  padding-right: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+#contacto .contacto-email-contenido {
+  font-size: 18px;
+}
+
+#contacto .contacto-email a {
+  text-decoration: none;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+#contacto .contacto-btn {
+  margin: 10px;
+}
+
+#contacto .btn-talk {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  border-radius: 30px;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+
+#contacto .btn-talk:hover {
   background-color: #ff5080;
   color: #fff;
 }
