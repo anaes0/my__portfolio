@@ -657,7 +657,7 @@ html {
   background-color: rgba(0, 0, 0, 0.8);
   color: #ff5080;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   opacity: 0;
   bottom: -40px;
   transition: 0.5s;
@@ -825,6 +825,10 @@ footer a {
   #sobremi .sobremi h2 {
     font-size: 25px;
     text-align: center;
+  }
+
+  #sobremi .sobremi .github {
+    color: yellow;
   }
   /* seccion MIS SERVICIOS */
   #servicios {
